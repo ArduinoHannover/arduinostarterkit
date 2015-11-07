@@ -1,7 +1,8 @@
 /*** Blink Sketch ***/
 /**
- * Mit diesem Sketch wird die 
-
+ * Mit diesem Sketch wird eine LED im Sekundentakt ein und ausgeschaltet.
+ * Nachfolgend wird der Pin der LED definiert, wobei Pin 13 meist mit der LED L auf dem Arduino verbunden ist.
+*/
 const byte LED = 13;
 /*
  * Alternativ LED_BUILTIN als Konstante nutzen, die fuer jedes Board (sofern definiert) gueltig ist.
@@ -9,6 +10,7 @@ const byte LED = 13;
  * Wenn du eine LED, die nicht auf dem Board selbst angebracht ist schalten moechtest, so nutze folgendes:
  * * Das kurze Bein (K, kurz, Kathode) der LED an GND (Ground/Masse/-)
  * * Das lange Bein (LAng, Anode) ueber einen Widerstand an den Pin, der durch LED definiert wurde.
+ * Mehr Informationen zu LEDs: http://wiki.arduino-hannover.de/index.php?title=LED
 */
 
 void setup ()
