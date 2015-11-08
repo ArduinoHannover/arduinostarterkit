@@ -4,13 +4,13 @@
 
 ## Einsteiger
 
-Sketches, die nur wenig über die Beispiele der Arduino-IDE
-hinausgehen, oder die Beispiele erläutern und erweitern.
+Sketche die nur wenig über die Beispiele der Arduino-IDE
+hinausgehen oder die Beispiele erläutern und erweitern.
 
 ## Erfahren
 
-Sketches für diejenigen, die schon ein wenig Erfahrung gesammelt haben.
-Besondere Sensoren, Aktoren oder Themen.
+Sketche für alle die schon ein wenig mehr Erfahrung mit Arduino gesammelt haben.
+Es geht hier häufig um Sensoren, Aktuatoren oder ähnliche Themen.
 
 ## Fortgeschritten
 
@@ -18,5 +18,5 @@ Hier werden fortgeschrittene Themen behandelt.
 
 ## Libraries
 
-Libraries der Arduino-Gruppe Hannover und Libraries, die nicht
-leicht zu finden sind.
+Libraries des Arduino Treffpunkt Hannover sowie Libraries die nicht
+ganz leicht zu finden sind.
