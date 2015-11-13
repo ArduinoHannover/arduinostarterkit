@@ -13,7 +13,7 @@ hinausgehen oder die Beispiele erläutern und erweitern.
 Sketche für alle die schon ein wenig mehr Erfahrung mit Arduino gesammelt haben.
 Es geht hier häufig um Sensoren, Aktuatoren oder ähnliche Themen.
 
-## Fortgeschritten
+## Fortgeschritten Benutzer
 
 Hier werden fortgeschrittene Themen behandelt.
 
