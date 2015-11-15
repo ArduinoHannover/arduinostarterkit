@@ -68,7 +68,7 @@ void loop() {
     delay(10);                                     // Verbesserung der Anzeige
   }
   else
-    digitalWrite(ledPin, LOW);                     // Kontroll LED einschalten
+    digitalWrite(ledPin, LOW);                     // Kontroll LED ausschalten
 }                                                  // Ende Loop (Endlos)
 /*******************************************************************************/
 /*******************************************************************************/
