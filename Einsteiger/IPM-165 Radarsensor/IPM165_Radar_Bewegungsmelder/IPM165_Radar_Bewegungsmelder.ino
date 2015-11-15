@@ -2,6 +2,7 @@
 /* IPM165_Radar_Bewegungsmelder - Sehr empfindlicher Bewegungsmelder mit 
  * einem 24GHz Doppler-Radarsensor inkl. 73dB Verstärker Modul von InnoSenT. 
  * Die analoge Ausgangsspannung ohne Bewegung beträgt etwa 2,5V.
+ * Mit einem detektierten Objekt, Rechtecksignal zwischen GND und etwa 3,5V.
  *
  *                       !Achtung!
  * Das Modul darf keinesfalls verpolt angeschlossen werden! Auch ist der Sensor
@@ -26,7 +27,7 @@
  *
  * Hardware Verbindung:  Ardu  -  IPM165 Doppler-Radarsensormodul mit Amp.
  *                       +5V   -  Vcc
- *                       A5    -  Sout
+ *                       A5    -  Sout / Radarsignal digital 3,5V
  *                       GND   -  GND
  *
  * Ergänzungen:          -
@@ -38,35 +39,36 @@
 /*******************************************************************************/
 /***  Software Version und Datum  ***/
 const char* sketchname            =  "IPM165Bewegung";
-const char* revision              =  "R.1.0";
+const char* revision              =  "R.1.1";
 const char* author                =  "Olaf Meier";
-const char* date                  =  "2015/11/14";
+const char* date                  =  "2015/11/15";
 
 /*******************************************************************************/
 /***  Deklariere Konstanten und Variablen für diesen Sketch  ***/
 const byte radarPin               =  A5;           // Signalpin Sout
 const byte ledPin                 =  13;           // Kontroll-LED
 int sensorValue                   =  0;            // Sensorwert
+/***  Schaltschwelle muss oberhalb 2,5V und unterhalb 3,5V sein  ***/
 int threshold                     =  650;          // Schaltschwelle 575-750
 
 /*******************************************************************************/
 /*******************************************************************************/
 void setup() {
-  pinMode(radarPin, INPUT);
-  pinMode(ledPin, OUTPUT);
-  digitalWrite(ledPin, LOW);
+  // pinMode(radarPin, INPUT);                     // Hier nicht notwendig
+  pinMode(ledPin, OUTPUT);                         // Kontroll LED intern Pin 13
+  digitalWrite(ledPin, LOW);                       // Kontroll LED ausschalten
 }                                                  // Ende Setup (Einmalig)
 /*******************************************************************************/
 /*******************************************************************************/
 void loop() {
   sensorValue = analogRead(radarPin);
-  if (sensorValue > threshold)
+  if (sensorValue > threshold)                     // Objekt erkannt
   {
-    digitalWrite(ledPin, HIGH);
+    digitalWrite(ledPin, HIGH);                    // Kontroll LED einschalten
     delay(10);                                     // Verbesserung der Anzeige
   }
   else
-    digitalWrite(ledPin, LOW);
+    digitalWrite(ledPin, LOW);                     // Kontroll LED einschalten
 }                                                  // Ende Loop (Endlos)
 /*******************************************************************************/
 /*******************************************************************************/
