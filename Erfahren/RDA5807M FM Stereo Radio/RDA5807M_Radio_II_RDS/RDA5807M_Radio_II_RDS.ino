@@ -52,7 +52,7 @@
 /*******************************************************************************/
 /***  Software Version und Datum  ***/
 const char* sketchname            =  "RDA5807M_Radio_II_RDS";
-const char* revision              =  "R.1.0";
+const char* revision              =  "R.1.1";
 const char* author                =  "Olaf Meier";
 const char* date                  =  "2016/01/27";
 
