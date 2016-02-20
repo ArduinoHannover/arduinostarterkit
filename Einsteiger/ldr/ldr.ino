@@ -1,5 +1,4 @@
-") == 0)
-towiderstand
+/* Photowiderstand
  *
  *  siehe auch: http://wiki.arduino-hannover.de/index.php?title=Fotowiderstand
  *
