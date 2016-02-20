@@ -6,7 +6,7 @@
  *
  **********************************************************************/
 
-const byte INPUTPIN = 0; // analoger Pin 0 fuer den Eingang
+const byte INPUTPIN = A0; // analoger Pin 0 fuer den Eingang
 
 void setup ()
 {
