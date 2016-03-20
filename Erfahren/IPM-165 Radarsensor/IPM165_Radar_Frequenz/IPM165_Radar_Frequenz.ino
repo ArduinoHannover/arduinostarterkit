@@ -12,11 +12,12 @@
  * Getestet mit:         Arduino Uno
  *                       Arduino IDE 1.63 / 1.64
  *
- * Referenz:             www.weidmann-elektronik.de/index.php?option=com_content&view=section&layout=blog&id=17&Itemid=21
+ * Referenz:             http://shop.weidmann-elektronik.de/index.php?page=categorie&cat=2
+ *                       http://shop.weidmann-elektronik.de/index.php?page=product&info=8
  *
- * Original Autor:       Weidmann Elektronik GmbH
+ * Original Autor:       Weidmann Elektronik
  *
- * Autor:                Dr. Ing. Wolfgang Weidmann
+ * Autor:                Sebastian Weidmann
  *
  *
  * Modifiziert von:      http://arduino-hannover.de/
@@ -40,7 +41,7 @@
 /*******************************************************************************/
 /***  Software Version und Datum  ***/
 const char* sketchname            =  "IPM165Frequenz";
-const char* revision              =  "R.1.0";
+const char* revision              =  "R.1.1";
 const char* author                =  "Olaf Meier";
 const char* date                  =  "2015/11/15";
 
